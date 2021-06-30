@@ -80,7 +80,7 @@ public class SequenceLayout(context: Context, attrs: AttributeSet?, defStyleAttr
     }
 
     /**
-     * Sets background resource for the dot of each contained step
+     * Sets background resource for the54dp dot of each contained step
      *
      * @attr ref com.transferwise.sequencelayout.R.styleable#SequenceLayout_dotBackground
      */
@@ -142,7 +142,7 @@ public class SequenceLayout(context: Context, attrs: AttributeSet?, defStyleAttr
             sequenceStepDot.setPulseColor(progressForegroundColor)
             sequenceStepDot.clipChildren = false
             sequenceStepDot.clipToPadding = false
-            val layoutParams = FrameLayout.LayoutParams(8.toPx(), 8.toPx()) //TODO dynamic dot size
+            val layoutParams = FrameLayout.LayoutParams(12.toPx(), 12.toPx()) //TODO dynamic dot size
             val totalDotOffset = getRelativeTop(sequenceStep, stepsWrapper) + sequenceStep.paddingTop + sequenceStep.getDotOffset() + 2.toPx() //TODO dynamic dot size
             layoutParams.topMargin = totalDotOffset
             layoutParams.gravity = Gravity.CENTER_HORIZONTAL

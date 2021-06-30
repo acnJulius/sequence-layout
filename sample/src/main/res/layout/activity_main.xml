@@ -22,36 +22,26 @@
 
             <com.transferwise.sequencelayout.SequenceStep
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:anchor="30 Nov"
-                app:title="First step"/>
-
-            <com.transferwise.sequencelayout.SequenceStep
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:title="Second step"/>
-
-            <com.transferwise.sequencelayout.SequenceStep
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingBottom="8dp"
-                android:paddingTop="4dp"
+                app:subtitle=" "
                 app:active="true"
-                app:anchor="Today"
-                app:subtitle="This is the subtitle of this step.\nIt should describe steps (especially the active step) in a detailed way."
-                app:title="Third step"
-                app:titleTextAppearance="@style/TextAppearance.AppCompat.Title"/>
+                android:layout_height="wrap_content"/>
 
             <com.transferwise.sequencelayout.SequenceStep
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:title="Fourth step"/>
+                app:subtitle=" "
+                android:layout_height="wrap_content"/>
 
             <com.transferwise.sequencelayout.SequenceStep
                 android:layout_width="match_parent"
+                app:subtitle=" "
                 android:layout_height="wrap_content"
-                app:anchor="2 Dec"
-                app:title="Fifth step"/>
+                />
+
+            <com.transferwise.sequencelayout.SequenceStep
+                android:layout_width="match_parent"
+                app:subtitle=" "
+                android:layout_height="wrap_content"/>
+
         </com.transferwise.sequencelayout.SequenceLayout>
 
     </LinearLayout>
