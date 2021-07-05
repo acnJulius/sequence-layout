@@ -23,23 +23,27 @@
             <com.transferwise.sequencelayout.SequenceStep
                 android:layout_width="match_parent"
                 app:subtitle=" "
+                app:title=" "
                 app:active="true"
                 android:layout_height="wrap_content"/>
 
             <com.transferwise.sequencelayout.SequenceStep
                 android:layout_width="match_parent"
                 app:subtitle=" "
+                app:title=" "
                 android:layout_height="wrap_content"/>
 
             <com.transferwise.sequencelayout.SequenceStep
                 android:layout_width="match_parent"
                 app:subtitle=" "
+                app:title=" "
                 android:layout_height="wrap_content"
                 />
 
             <com.transferwise.sequencelayout.SequenceStep
                 android:layout_width="match_parent"
                 app:subtitle=" "
+                app:title=" "
                 android:layout_height="wrap_content"/>
 
         </com.transferwise.sequencelayout.SequenceLayout>

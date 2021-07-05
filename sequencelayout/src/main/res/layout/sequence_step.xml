@@ -2,7 +2,7 @@
 <merge xmlns:android="http://schemas.android.com/apk/res/android"
        xmlns:tools="http://schemas.android.com/tools"
        android:layout_width="match_parent"
-       android:layout_height="64dp"
+       android:layout_height="wrap_content"
        android:clipChildren="false"
        android:clipToPadding="false"
        android:orientation="horizontal"
@@ -25,7 +25,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:visibility="gone"
+        android:visibility="invisible"
         android:orientation="vertical"
         android:paddingBottom="5dp">
 
@@ -72,7 +72,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:visibility="gone"
+                android:visibility="invisible"
                 android:layout_marginLeft="16dp"
                 android:background="#00f"/>
         </LinearLayout>
