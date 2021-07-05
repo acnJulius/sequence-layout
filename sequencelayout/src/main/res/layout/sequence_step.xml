@@ -2,7 +2,7 @@
 <merge xmlns:android="http://schemas.android.com/apk/res/android"
        xmlns:tools="http://schemas.android.com/tools"
        android:layout_width="match_parent"
-       android:layout_height="wrap_content"
+       android:layout_height="64dp"
        android:clipChildren="false"
        android:clipToPadding="false"
        android:orientation="horizontal"
@@ -23,23 +23,59 @@
         tools:text="30 Nov"/>
 
     <LinearLayout
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
+        android:visibility="gone"
         android:orientation="vertical"
-        android:paddingBottom="16dp">
+        android:paddingBottom="5dp">
 
-        <TextView
-            android:id="@+id/title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            tools:text="The Title of this Step"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
 
-        <TextView
-            android:id="@+id/subtitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            tools:text="More text More text More text\nMore text More text More text More text More text "/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="41dp"
+            android:layout_gravity="center"
+            android:background="@color/default_progress_background"
+            android:layout_marginLeft="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/title"
+                    android:text="BRONZE"
+                    android:fontFamily="sans-serif"
+                    android:textColor="#99000000"
+                    android:textSize="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:id="@+id/subtitle"
+                    android:textColor="#DE000000"
+                    android:text="0 - 19 999 status points"
+                    android:textSize="16dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:visibility="gone"
+                android:layout_marginLeft="16dp"
+                android:background="#00f"/>
+        </LinearLayout>
     </LinearLayout>
+         </LinearLayout>
 </merge>

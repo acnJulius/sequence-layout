@@ -220,9 +220,11 @@ public class SequenceLayout(context: Context, attrs: AttributeSet?, defStyleAttr
             if (child.isActive()) {
                 child.setPadding(
                         0,
-                        if (stepsWrapper.childCount == 0) 0 else resources.getDimensionPixelSize(R.dimen.sequence_active_step_padding_top), //no paddingTop if first step is active
                         0,
-                        resources.getDimensionPixelSize(R.dimen.sequence_active_step_padding_bottom)
+                    //    if (stepsWrapper.childCount == 0) 0 else resources.getDimensionPixelSize(R.dimen.sequence_active_step_padding_top), //no paddingTop if first step is active
+                        0,
+                 0
+                        //       resources.getDimensionPixelSize(R.dimen.sequence_active_step_padding_bottom)
                 )
             }
             child.onStepChangedListener = this
